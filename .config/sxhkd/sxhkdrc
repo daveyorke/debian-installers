@@ -1,5 +1,5 @@
 super + w
-    firefox-esr
+    google-chrome-stable
 
 super + Return
 	kitty
@@ -14,11 +14,17 @@ super + shift + Return
 super + p
 	rofi -show calc -modi calc -no-show-match -no-sort
 
-super + f
+super + e
 	pcmanfm
+
+super + f
+	bspc node -t ~fullscreen
 
 super + e
 	geany
+
+ctrl + alt + l
+	i3lock -i ~/.config/backgrounds/lockscreen.jpg	
 
 super + shift + s
 	scrot
@@ -42,11 +48,12 @@ super + shift + r
 super + shift + q
 	bspc quit
 
-super + shift + c
+super + q
 	bspc node -c
 
 super + i
     bspc node -R 90
+
 super + shift + i
     bspc node -R -90
 
@@ -55,6 +62,9 @@ super + {shift + t,shift + f}
 
 super + shift + { Left, Down, Up, Right}
 	bspc node -s {west,south,north,east}
+
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
 
 super + { Left, Down, Up, Right}
 	bspc node -f {west,south,north,east}
