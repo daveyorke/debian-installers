@@ -66,7 +66,7 @@ sudo apt install -y bspwm dmenu sxhkd picom numlockx rofi dunst libnotify-bin un
 
 # Command line text editor -- nano preinstalled 
 sudo apt install -y micro
-# sudo apt install -y vim
+sudo apt install -y vim
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
